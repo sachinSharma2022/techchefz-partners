@@ -1,7 +1,9 @@
+import PartnerProgram from "@/components/partnerProgram";
+
 const HomePage = async () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <PartnerProgram />
     </div>
   );
 };

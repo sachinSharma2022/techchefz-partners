@@ -11,7 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <body className={cn(aeonik.variable, helvetica.variable)}>
+      <body
+        className={(cn(aeonik.variable, helvetica.variable), "bg-eerie-black")}
+      >
         {children}
       </body>
     </html>
