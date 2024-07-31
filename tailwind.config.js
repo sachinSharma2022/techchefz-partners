@@ -30,6 +30,7 @@ module.exports = {
       'eerie-black': '#1a1a1a',
       'dreamless-sleep': '#111111',
       'karimun-blue': '#1e8af2',
+      'beluga': '#f1f1f1',
     },
   },
   plugins: [],

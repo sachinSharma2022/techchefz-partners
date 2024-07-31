@@ -3,7 +3,7 @@ import React from "react";
 
 const PartnerProgram = () => {
   return (
-    <div className="container mx-auto md:px-16 py-16 relative">
+    <div className="container mx-auto lg:px-16 py-16 relative">
       <div className="">
         <Image
           src="/images/partner-bg.jpg"
@@ -14,9 +14,9 @@ const PartnerProgram = () => {
         />
       </div>
 
-      <div className="md:grid block grid-cols-2 gap-x-36 md:absolute top-60 left-0 md:px-36 w-full px-4">
-        <div className="text-white bg-dreamless-sleep rounded-[20px] md:py-8 md:mt-0 mt-[-70px] relative p-8 border-4 border-[#1e8af2]">
-          <h3 className="md:text-[44px] text-[32px] font-medium m-0 md:leading-[3.3rem] leading-[2.3rem] md:mb-8 mb-6">
+      <div className="lg:grid block grid-cols-2 gap-x-36 lg:absolute top-60 left-0 lg:px-36 w-full px-4">
+        <div className="text-white bg-dreamless-sleep rounded-[20px] lg:py-8 lg:mt-0 mt-[-70px] relative p-8 border-4 border-[#1e8af2]">
+          <h3 className="lg:text-[44px] text-[32px] font-medium m-0 lg:leading-[3.3rem] leading-[2.3rem] lg:mb-8 mb-6">
             Want to join the <span className="block">Partner Program ?</span>
           </h3>
           <p>
@@ -27,9 +27,9 @@ const PartnerProgram = () => {
           {/* <Button>Become a Partner</Button> */}
         </div>
 
-        <div className="text-white md:mt-0 mt-5">
+        <div className="text-white lg:mt-0 mt-5">
           <p className="mb-3">Number Insights :</p>
-          <div className="grid grid-cols-2 md:gap-7 gap-4 md:w-3/4 w-full">
+          <div className="grid grid-cols-2 lg:gap-7 gap-4 lg:w-3/4 w-full">
             <div className="bg-white bg-opacity-15 rounded-[20px] p-[24px] border">
               <div className="text-[44px] font-medium leading-10 mb-4">
                 500+
@@ -46,9 +46,9 @@ const PartnerProgram = () => {
         </div>
       </div>
 
-      <div className="md:grid block md:grid-cols-2 md:gap-x-44 md:py-12 px-4 md:px-20 md:mt-10 mt-16">
+      <div className="lg:grid block lg:grid-cols-2 lg:gap-x-44 lg:py-12 px-4 lg:px-20 lg:mt-10 mt-16">
         <div className="text-white">
-          <h3 className="md:text-[44px] text-[32px] font-medium md:leading-[3.3rem] leading-[2.3rem] md:mb-7 mb-5">
+          <h3 className="lg:text-[44px] text-[32px] font-medium lg:leading-[3.3rem] leading-[2.3rem] lg:mb-7 mb-5">
             Steps through our
             <span className="block">Application Process.</span>
           </h3>
@@ -58,7 +58,7 @@ const PartnerProgram = () => {
             collaboration.
           </p>
         </div>
-        <div className="text-white md:mt-0 mt-8">
+        <div className="text-white lg:mt-0 mt-8">
           <li className="flex list-none mb-3">
             <svg
               width="24"
