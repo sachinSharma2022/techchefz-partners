@@ -1,11 +1,10 @@
 "use client";
-import { cva } from "class-variance-authority";
-import gsap from "gsap";
 import * as React from "react";
-import { useEffect, useRef } from "react";
+import { cva } from "class-variance-authority";
 import { cn } from "../../../lib/utils";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
-import CircleLoader from "../circleLoader";
 import styles from "./style.module.scss";
 
 const buttonVariants = cva(styles.base, {
@@ -34,24 +33,9 @@ const buttonVariants = cva(styles.base, {
 });
 
 const Button = React.forwardRef(
-  (
-    {
-      className,
-      children,
-      variant,
-      size,
-      asChild = false,
-      disabled,
-      loader,
-      repeatCount,
-      dur,
-      ariaLabel,
-      buttonTitle,
-      ...props
-    },
-    ref
-  ) => {
+  ({ className, children, variant, size, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : "button";
+
     const circle = useRef(null);
     let timeline = useRef(null);
     let timeoutId = null;
@@ -80,6 +64,7 @@ const Button = React.forwardRef(
         timeline.current.play();
       }, 300);
     };
+
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
@@ -91,14 +76,8 @@ const Button = React.forwardRef(
         }}
         ref={ref}
         {...props}
-        disabled={disabled}
-        aria-label={ariaLabel}
-        title={buttonTitle}
       >
-        <div className={cn(styles.btnText, props.pStyle)}>
-          {children}
-          {loader && <CircleLoader repeatCount={repeatCount} dur={dur} />}
-        </div>
+        <div className={cn(styles.btnText, props.pStyle)}>{children}</div>
         <div ref={circle} className={styles.circle}></div>
       </Comp>
     );
