@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
 
 const PartnerProgram = () => {
   return (
@@ -24,7 +25,7 @@ const PartnerProgram = () => {
             people-centric paradigm internally. United by a strong sense of
             community, ownership, and collaboration, we navigate each endeavor.
           </p>
-          {/* <Button>Become a Partner</Button> */}
+          <Button variant="lightBlueBtn" size="lg" className="mt-7">Become a Partner</Button>
         </div>
 
         <div className="text-white lg:mt-0 mt-5">
@@ -46,7 +47,7 @@ const PartnerProgram = () => {
         </div>
       </div>
 
-      <div className="lg:grid block lg:grid-cols-2 lg:gap-x-44 lg:py-12 px-4 lg:px-20 lg:mt-10 mt-16">
+      <div className="lg:grid block lg:grid-cols-2 lg:gap-x-44 lg:py-12 px-4 lg:px-20 lg:mt-32 mt-16">
         <div className="text-white">
           <h3 className="lg:text-[44px] text-[32px] font-medium lg:leading-[3.3rem] leading-[2.3rem] lg:mb-7 mb-5">
             Steps through our
