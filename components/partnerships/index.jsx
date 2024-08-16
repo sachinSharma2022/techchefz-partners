@@ -76,32 +76,33 @@ const Partnerships = () => {
   ];
 
   return (
-    <div className="lg:px-16 py-20 relative bg-secondary text-dreamless-sleep text-white">
+    <div className="lg:px-16 lg:py-20 py-16 pb-0 relative bg-secondary text-white">
       <div className="container mx-auto">
-        <div className="flex items-center">
+        <div className="lg:flex items-center lg:px-0 px-5">
           <div>
             <h6 className="text-[1rem] uppercase font-bold mb-3 opacity-80">
               Types of Partnerships
             </h6>
-            <h2 className="text-[2.75rem] font-medium leading-[3.5625rem] mb-10">
+            <h2 className="text-[2.75rem] font-medium leading-[54px] lg:mb-10 mb-5">
               Explore <span>Partnership Possibilities</span> with TechChefz.
             </h2>
           </div>
-          <p className="text-white opacity-60 text-[1.25rem] w-1/3 font-normal leading-[1.875rem] ">
+          <p className="text-white opacity-60 text-[1.25rem] lg:w-1/3 font-normal leading-[1.875rem] ">
             Partnership avenues tailored to your needs and goals. Join us in
             shaping innovation, driving growth together.
           </p>
         </div>
 
-        <div className="bg-eerie-black px-7 rounded-[12px]">
+        <div className="bg-eerie-black lg:px-7 lg:pb-0 pb-16 rounded-[12px] mt-16 lg:mt-0 px-5">
           <div className="flex w-full justify-center">
             <div className="w-full">
               <TabGroup>
-                <TabList className="flex gap-4 justify-center border-b-[1px] border-[#353535]">
+                <div className="overflow-x-auto">
+                <TabList className="flex gap-4 lg:min-w-full min-w-[53rem] justify-center border-b-[1px] border-[#353535]">
                   {categories.map(({ name, icon }) => (
                     <Tab
                       key={name}
-                      className="text-[20px] relative after:w-[1px] after:h-[30px] after:bg-[#D9D9D9] after:opacity-5 last:after:hidden after:absolute after:right-0 w-full justify-center font-semibold flex items-center text-white/80 focus:outline-none data-[selected]:border-b-2 data-[selected]:text-white  border-b-2 border-transparent data-[selected]:border-[#1e8af2] py-6"
+                      className="text-[20px] whitespace-nowrap relative after:w-[1px] after:h-[30px] after:bg-[#D9D9D9] after:opacity-5 last:after:hidden after:absolute after:right-0 w-full justify-center lg:font-semibold font-medium flex items-center text-white/80 focus:outline-none data-[selected]:border-b-2 data-[selected]:text-white  border-b-2 border-transparent data-[selected]:border-[#1e8af2] py-6"
                     >
                       <span className="mr-3">
                         <svg
@@ -173,11 +174,12 @@ const Partnerships = () => {
                     </Tab>
                   ))}
                 </TabList>
-                <TabPanels className="mt-3">
+                </div>
+                <TabPanels>
                   {categories.map(({ name, posts }) => (
                     <TabPanel key={name}>
-                      <div className="flex py-8">
-                        <div>
+                      <div className="lg:flex lg:py-8">
+                        <div className="lg:my-0 my-10">
                           <Image
                             src="/images/digital-agency.jpg"
                             width={540}
@@ -186,9 +188,9 @@ const Partnerships = () => {
                             className="rounded-[12px]"
                           />
                         </div>
-                        <div className="pl-24">
+                        <div className="lg:pl-24">
                           {posts.map((item, key) => (
-                            <div key={key} className="mb-5 flex">
+                            <div key={key} className="mb-5 flex last-of-type:mb-0">
                               <span className="mr-5 mt-2">
                                 <svg
                                   width="20"
