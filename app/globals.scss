@@ -58,3 +58,8 @@ input:-webkit-autofill:active {
 input:-webkit-autofill {
   -webkit-text-fill-color: color(primary-white) !important;
 }
+.text-grad-blue{
+  background: linear-gradient(to right, #1E8AF2, #05BED7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
