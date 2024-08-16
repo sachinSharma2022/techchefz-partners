@@ -36,3 +36,25 @@ h5,
 h6 {
   font-family: font(secondary);
 }
+
+
+// Primary Container
+.primary-container {
+  max-width: 1440px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px color(text-primary) inset !important;
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+  -webkit-text-fill-color: color(primary-white) !important;
+}

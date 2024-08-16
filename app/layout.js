@@ -1,3 +1,4 @@
+import Footer from "@/components/layouts/footer";
 import { aeonik, helvetica } from "../lib/fonts";
 import { cn } from "../lib/utils";
 import "./globals.scss";
@@ -15,6 +16,8 @@ export default function RootLayout({ children }) {
         className={(cn(aeonik.variable, helvetica.variable), "bg-eerie-black")}
       >
         {children}
+
+        <Footer/>
       </body>
     </html>
   );
