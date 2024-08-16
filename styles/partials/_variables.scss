@@ -1,0 +1,49 @@
+$fonts: (
+  "primary": var(--font-primary),
+  "secondary": var(--font-secondary),
+);
+
+$colors: (
+  "primary-background": #f1f1f1,
+  "primary-white": #ffffff,
+  "primary-black": #000000,
+  "text-primary": #111111,
+  "input-bg": #1F1F1F,
+  "dark-bg": #1A1A1A,
+  "dark-tab": #323232,
+  "dark-icon": #191919,
+  "primary-blue": #0066CC,
+  "circle-blue": #0037ED,
+  "heading-liner": #05bed7,
+  "info-blue":#26A0F8,
+  "border-light-blue":#4cc3da,
+  "medium-blue" :#3376d9 ,
+  "dark-blue": #2720a9,
+  "primary-orange": #FD7000,
+  "dark-gray": #1f1f1f,
+  "bg-soft": #f1f1f1,
+  "bg-gray": #A0A0A0,
+  "error": #FC0323,
+  "border-darker": #d6d6d6,
+);
+
+$font-sizes: (
+  "xxs": 0.875rem,
+  "normal": 1rem,
+  "lg": 1.25rem,
+  "xl": 1.5rem,  
+  "larger": 2.7rem,
+  "xxxl": 2rem,
+  "xl-larger": 4rem,
+  "xxl-larger": 6.25rem,
+);
+
+$spacings: (
+  "section-primary-padding": 8.75rem 7.5rem,
+  "p-120" : 7.5rem, 
+  "section-inline-padding": 10rem,
+  "section-block-padding": 8.75rem,
+  "section-mob-padding": 5rem 1.25rem,
+  "section-mob-padding-Left-Right": 0rem 1.25rem,
+  "space80": 5rem
+);

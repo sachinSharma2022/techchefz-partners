@@ -1,6 +1,7 @@
 import ElevateExperience from "@/components/elevateExperience";
 import GlobalPartners from "@/components/globalPartners";
 import PartnerProgram from "@/components/partnerProgram";
+import Partnerships from "@/components/partnerships";
 import PathToPartnership from "@/components/pathToPartnership";
 import SeekPartners from "@/components/seekPartners";
 import Testimonials from "@/components/testimonials";
@@ -80,6 +81,7 @@ const HomePage = async () => {
       <ElevateExperience elevateExperienceData={elevateExperienceData} />
       <GlobalPartners />
       <PathToPartnership />
+      <Partnerships />
       <Testimonials />
       <PartnerProgram />
     </div>
