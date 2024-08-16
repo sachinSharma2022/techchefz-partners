@@ -27,3 +27,9 @@ body {
     text-wrap: balance;
   }
 }
+
+.text-grad-blue{
+  background: linear-gradient(to right, #1E8AF2, #05BED7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
