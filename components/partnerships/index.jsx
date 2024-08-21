@@ -76,7 +76,7 @@ const Partnerships = () => {
   ];
 
   return (
-    <div className="lg:px-16 lg:py-20 py-16 pb-0 relative bg-secondary text-white">
+    <div className="lg:px-16 lg:py-[120px] py-16 pb-0 relative bg-secondary text-white">
       <div className="container mx-auto">
         <div className="lg:flex items-center lg:px-0 px-5">
           <div>
@@ -84,7 +84,7 @@ const Partnerships = () => {
               Types of Partnerships
             </h6>
             <h2 className="text-[2.75rem] font-medium leading-[54px] lg:mb-10 mb-5">
-              Explore <span>Partnership Possibilities</span> with TechChefz.
+              Explore <span className="text-grad-blue">Partnership Possibilities</span> with TechChefz.
             </h2>
           </div>
           <p className="text-white opacity-60 text-[1.25rem] lg:w-1/3 font-normal leading-[1.875rem] ">

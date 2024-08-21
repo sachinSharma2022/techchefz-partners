@@ -63,3 +63,18 @@ input:-webkit-autofill {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
+// Testimonials Card
+.testimonial-card {
+
+  .testimonial-img {
+    display: none;
+  }
+  .swiper-slide-active {
+    width: 50% !important;
+
+    .testimonial-img {
+      display: block;
+    }
+  }
+}

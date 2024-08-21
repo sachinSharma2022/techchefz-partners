@@ -1,15 +1,92 @@
-import React from 'react'
-import TestimonialCard from './testimonialCard'
+"use client";
+import React from "react";
+import TestimonialCard from "./testimonialCard";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
 const Testimonials = () => {
+  const cardData = [
+    {
+      // userImage: "/images/user.jpg",
+      name: "Jamie Olga",
+      description:
+        "We believe in a customer-centric ethic without and people-centric paradigm within.  With a strong sense of community, ownership, and collaboration our people work.",
+      designation: "VP of Revenue Operations",
+    },
+    {
+      // userImage: "/images/user.jpg",
+      name: "Jamie Olga",
+      description:
+        "We believe in a customer-centric ethic without and people-centric paradigm within.  With a strong sense of community, ownership, and collaboration our people work.",
+      designation: "VP of Revenue Operations",
+    },
+    {
+      // userImage: "/images/user.jpg",
+      name: "Jamie Olga",
+      description:
+        "We believe in a customer-centric ethic without and people-centric paradigm within.  With a strong sense of community, ownership, and collaboration our people work.",
+      designation: "VP of Revenue Operations",
+    },
+    {
+      // userImage: "/images/user.jpg",
+      name: "Jamie Olga",
+      description:
+        "We believe in a customer-centric ethic without and people-centric paradigm within.  With a strong sense of community, ownership, and collaboration our people work.",
+      designation: "VP of Revenue Operations",
+    },
+    {
+      // userImage: "/images/user.jpg",
+      name: "Jamie Olga",
+      description:
+        "We believe in a customer-centric ethic without and people-centric paradigm within.  With a strong sense of community, ownership, and collaboration our people work.",
+      designation: "VP of Revenue Operations",
+    },
+    {
+      // userImage: "/images/user.jpg",
+      name: "Jamie Olga",
+      description:
+        "We believe in a customer-centric ethic without and people-centric paradigm within.  With a strong sense of community, ownership, and collaboration our people work.",
+      designation: "VP of Revenue Operations",
+    },
+  ];
   return (
-    <div className="container mx-auto lg:px-16 py-16 relative text-dreamless-sleep bg-white">
+    <section className="bg-white lg:px-16 py-[120px] testimonial-card">
+      <div className="container mx-auto relative text-dreamless-sleep">
         <h6 className="text-[16px] uppercase font-bold mb-3">Testimonials</h6>
-        <h2 className="text-[44px] font-medium w-1/3 leading-[57px] mb-10">What our partners <span>say about us.</span></h2>
+        <h2 className="text-[44px] font-medium w-1/3 leading-[57px] mb-10">
+          What our partners{" "}
+          <span className="text-grad-blue">say about us.</span>
+        </h2>
+      </div>
+      <div className="pl-6 mr-[-120px]">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          className="mySwiper"
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+        >
+          {cardData.map((items) => (
+            <SwiperSlide key={items?.id}>
+              <TestimonialCard
+                useImage={items.userImage}
+                description={items.description}
+                name={items.name}
+                designation={items.designation}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+  );
+};
 
-        <TestimonialCard />
-    </div>
-  )
-}
-
-export default Testimonials
+export default Testimonials;

@@ -3,7 +3,7 @@ import React from "react";
 
 const WhyPartnerWithUs = ({ whyPartnerWithUsData }) => {
   return (
-    <section className="lg:px-16 py-16 relative bg-[#1F1F1F]">
+    <section className="lg:px-16 py-[120px] relative bg-secondary">
       <div className="px-4 md:px-0 container mx-auto">
         <div className="md:max-w-[993px] mx-auto text-center mb-14">
           <p className="text-white text-[16px] leading-[24px] font-normal md:font-bold uppercase mb-4 opacity-80">

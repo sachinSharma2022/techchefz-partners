@@ -1,10 +1,51 @@
+"use client";
 import React from "react";
 import GlobalPartnersCard from "./globalPartnersCard";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
+
 const GlobalPartners = () => {
+  const cardData = [
+    {
+      imgUrl: "/images/Wondrlap_1.png",
+      title: "WondrLab",
+      description: "We are in the business of providing brand strategy",
+    },
+    {
+      imgUrl: "/images/Wondrlap_1.png",
+      title: "ATCS",
+      description: "We are in the business of providing brand strategy",
+    },
+    {
+      imgUrl: "/images/Wondrlap_1.png",
+      title: "DWAO",
+      description: "We are in the business of providing brand strategy",
+    },
+    {
+      imgUrl: "/images/Wondrlap_1.png",
+      title: "22 Feet",
+      description: "We are in the business of providing brand strategy",
+    },
+    {
+      imgUrl: "/images/Wondrlap_1.png",
+      title: "DWAO",
+      description: "We are in the business of providing brand strategy",
+    },
+    {
+      imgUrl: "/images/Wondrlap_1.png",
+      title: "WondrLab",
+      description: "We are in the business of providing brand strategy",
+    },
+
+  ];
   return (
-    <section className="lg:px-16 py-16 relative bg-[#111111]">
-      <div className="px-4 md:px-0 container mx-auto">
+    <section className="lg:pl-16 py-[120px] relative bg-[#111111]">
+      <div className="mx-auto">
         <p className="text-white text-[16px] leading-[24px] font-normal md:font-bold mb-4 opacity-80">
           CURRENT PARTNERS
         </p>
@@ -14,10 +55,27 @@ const GlobalPartners = () => {
             <span className="text-grad-blue">B2B Global Partner</span>
           </h2>
         </div>
-        <div className="flex">
-          <GlobalPartnersCard />
+          <Swiper
+            slidesPerView={4.4}
+            spaceBetween={30}
+            className="mySwiper"
+            modules={[Autoplay]}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+          >
+            {cardData.map((items) => (
+              <SwiperSlide key={items?.id}>
+                <GlobalPartnersCard
+                  title={items.title}
+                  imgUrl={items.imgUrl}
+                  description={items.description}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-      </div>
     </section>
   );
 };

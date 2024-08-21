@@ -72,6 +72,36 @@ const HomePage = async () => {
       logoUrl: "/images/icons/22_Feet.svg",
       altTxt: "logo4",
     },
+    {
+      id: 0,
+      logoUrl: "/images/icons/Logo_Wnderlab_India.svg",
+      altTxt: "logo3",
+    },
+    {
+      id: 1,
+      logoUrl: "/images/icons/22_Feet.svg",
+      altTxt: "logo4",
+    },
+    {
+      id: 0,
+      logoUrl: "/images/icons/Logo_Wnderlab_India.svg",
+      altTxt: "logo3",
+    },
+    {
+      id: 1,
+      logoUrl: "/images/icons/22_Feet.svg",
+      altTxt: "logo4",
+    },
+    {
+      id: 0,
+      logoUrl: "/images/icons/Logo_Wnderlab_India.svg",
+      altTxt: "logo3",
+    },
+    {
+      id: 1,
+      logoUrl: "/images/icons/22_Feet.svg",
+      altTxt: "logo4",
+    },
   ];
   return (
     <div>

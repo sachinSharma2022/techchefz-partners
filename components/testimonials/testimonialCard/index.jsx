@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-const TestimonialCard = () => {
+const TestimonialCard = ({description, name, designation }) => {
   return (
-    <div className="text-dreamless-sleep bg-beluga rounded-[20px] w-2/4 flex">
-      <div className="w-3/4">
+    <div className="text-dreamless-sleep bg-beluga rounded-[20px] flex h-[466px]">
+      <div className="min-w-[300px] h-[466px] relative testimonial-img">
         <Image
           src="/images/user.jpg"
-          className="rounded-s-[20px]"
+          className="rounded-s-[20px] object-cover h-full"
           width={373}
           height={466}
           alt=""
@@ -30,15 +30,19 @@ const TestimonialCard = () => {
               />
             </svg>
           </span>
-          We believe in a customer-centric ethic without and people-centric
-          paradigm within. With a strong sense of community, ownership, and
-          collaboration our people work.
+          <span className="opacity-60">
+          {description}
+          </span>
         </p>
 
         <div className="mt-8">
-            <div className="text-[20px] font-medium">Jamie Olga</div>
-            <div className="text-[16px] font-normal">VP of Revenue Operations</div>
-            <div className="mt-4"><Image src="/images/atcs.png" width={82} height={24} alt="" /></div>
+          <div className="text-[20px] font-medium"> {name}</div>
+          <div className="text-[16px] font-normal opacity-60">
+            {designation}
+          </div>
+          <div className="mt-4">
+            <Image src="/images/atcs.png" width={82} height={24} alt="" />
+          </div>
         </div>
       </div>
     </div>

@@ -26,19 +26,19 @@ const SeekPartners = () => {
     },
   ];
   return (
-    <section className="lg:px-16 py-16 relative bg-[#1A1A1A] md:bg-[#ffffff]">
+    <section className="lg:px-16 pt-[120px] pb-[160px] relative bg-[#1A1A1A] md:bg-[#ffffff]">
       <div className="px-4 md:px-0 container mx-auto">
         <h2 className="text-white md:text-[#111111] text-[32px] md:text-[44px] leading-[40px] md:leading-[57.2px] font-medium mb-12">
           We seek partners who share our passion for{" "}
           <span className="text-grad-blue">innovation</span>,{" "}
           <span className="text-grad-blue">value collaboration</span>, and{" "}
           <span className="text-grad-blue">aspire for excellence</span>.
-          Together, let's foster growth, and achieve remarkable success.
+          Together, let&apos;s foster growth, and achieve remarkable success.
         </h2>
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-[40%] flex-initial flex-shrink-0">
-            <div className="relative px-14 py-12">
-              <div className="absolute top-0 left-0 w-[96px] h-[96px] border-[6px] md:border-[12px] border-[#1A1A1A] md:border-white rounded-[12px] md:bg-white overflow-hidden">
+            <div className="relative mt-20 ml-10">
+              <div className="absolute top-[-50px] left-[-50px] w-[167px] h-[167px] border-[6px] md:border-[12px] border-[#1A1A1A] md:border-white rounded-[12px] md:bg-white overflow-hidden z-10">
                 <Image
                   src="/images/top_image.png"
                   width={96}
@@ -47,7 +47,18 @@ const SeekPartners = () => {
                   alt="center"
                 />
               </div>
-              <div className="absolute right-0 bottom-0 w-[96px] h-[96px] border-[6px] md:border-[12px] border-[#1A1A1A] md:border-white rounded-[12px] md:bg-white overflow-hidden">
+
+              <div className="w-[380px] h-[427px] relative">
+                <Image
+                  src="/images/center_image.png"
+                  width={500}
+                  height={500}
+                  className="w-full h-auto rounded-[12px]"
+                  alt="center"
+                />
+              </div>
+
+              <div className="absolute bottom-[-50px] right-[-50px] w-[167px] h-[167px] border-[6px] md:border-[12px] border-[#1A1A1A] md:border-white rounded-[12px] md:bg-white overflow-hidden z-10">
                 <Image
                   src="/images/bottom_image.png"
                   width={96}
@@ -56,13 +67,6 @@ const SeekPartners = () => {
                   alt="center"
                 />
               </div>
-              <Image
-                src="/images/center_image.png"
-                width={380}
-                height={427}
-                className="w-full h-auto rounded-[12px]"
-                alt="center"
-              />
             </div>
           </div>
           <div className="w-full md:w-[40%] flex-initial flex-shrink-0 mt-8 md:mt-0">
