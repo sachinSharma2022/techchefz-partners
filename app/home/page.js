@@ -1,3 +1,4 @@
+import Banner from "@/components/banner";
 import ElevateExperience from "@/components/elevateExperience";
 import GlobalPartners from "@/components/globalPartners";
 import PartnerProgram from "@/components/partnerProgram";
@@ -105,6 +106,7 @@ const HomePage = async () => {
   ];
   return (
     <div>
+      <Banner />
       <TrustedPartners trustedPartnersData={trustedPartnersData} />
       <WhyPartnerWithUs whyPartnerWithUsData={whyPartnerWithUsData} />
       <SeekPartners />

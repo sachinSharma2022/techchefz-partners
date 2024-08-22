@@ -12,6 +12,9 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      backgroundImage: {
+        'hero-pattern': "linear-gradient(to bottom,  rgba(4,49,93,1) 0%,rgba(125,185,232,0) 100%)",
+     },
     },
     colors: {
       transparent: 'transparent',
@@ -31,6 +34,7 @@ module.exports = {
       'dreamless-sleep': '#111111',
       'karimun-blue': '#1e8af2',
       'beluga': '#f1f1f1',
+      'marine': '#04315d',
     },
   },
   plugins: [],

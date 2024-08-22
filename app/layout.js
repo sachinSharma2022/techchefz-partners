@@ -2,6 +2,7 @@ import Footer from "@/components/layouts/footer";
 import { aeonik, helvetica } from "../lib/fonts";
 import { cn } from "../lib/utils";
 import "./globals.scss";
+import Header from "@/components/layouts/header";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body
         className={(cn(aeonik.variable, helvetica.variable), "bg-eerie-black")}
       >
+        <Header />
         {children}
 
         <Footer/>
