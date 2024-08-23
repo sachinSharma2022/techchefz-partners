@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2">
+        <div className="lg:grid grid-cols-2">
             <div className={styles.footLeftPanel}>
               <p className={styles.description}>
                 Stay at the forefront of innovation, trends, and industry
