@@ -37,7 +37,7 @@ const PathToPartnership = () => {
     },
   ];
   return (
-    <section className="lg:px-16 py-16 relative bg-[#1F1F1F] md:bg-white">
+    <section className="lg:px-16 py-[120px] relative bg-[#1F1F1F] md:bg-white">
       <div className="px-4 md:px-0 container mx-auto">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-[50%] flex-initial flex-shrink-0">
@@ -68,7 +68,7 @@ const PathToPartnership = () => {
           </div>
         </div>
 
-        <div className="absolute w-full bottom-28">
+        <div className="absolute w-full bottom-40">
           <Swiper
             slidesPerView={4.4}
             spaceBetween={30}

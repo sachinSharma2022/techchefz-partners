@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="lg:py-20 py-16 lg:px-16 px-4 bg-hero-pattern h-[75dvh] flex items-center">
+    <div className="lg:py-20 py-16 lg:px-16 px-4 bg-hero-pattern h-[67dvh] flex items-center">
       <div className="container mx-auto">
         <div className="flex items-center justify-start">
           <div>
@@ -23,14 +23,16 @@ const Banner = () => {
             </Button>
           </div>
 
-<div className="absolute right-[-15vw] opacity-40 top-30 w-7/12">
-          <Image
-            src="/images/hero-img.svg"
-            width={1000}
-            height={1000}
-            className="w-full h-full"
-            alt="bg-image"
-          />
+          <div className="absolute right-[-15vw] opacity-40 top-[120px] w-7/12 mask1">
+            <Image
+              src="/images/hero-image.jpg"
+              width={1000}
+              height={1000}
+              className="w-full h-full"
+              alt="bg-image"
+            />
+
+            <div className="border-mask"></div>
           </div>
         </div>
       </div>

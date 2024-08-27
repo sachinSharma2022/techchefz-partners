@@ -5,7 +5,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="lg:px-16 px-4 py-3 top-0 left-0 w-full border-b border-[#23476c] sticky z-50 bg-marine">
+    <header className="lg:px-16 px-4 py-3 top-0 left-0 w-full border-b border-[#23476c] sticky z-50 bg-marine h-20 flex items-center">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <Link href="/">

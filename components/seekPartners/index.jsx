@@ -37,12 +37,12 @@ const SeekPartners = () => {
         </h2>
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-[40%] flex-initial flex-shrink-0">
-            <div className="relative mt-20 ml-10">
+            <div className="relative mt-20 ml-10 max-w-[400px]">
               <div className="absolute top-[-50px] left-[-50px] w-[167px] h-[167px] border-[6px] md:border-[12px] border-[#1A1A1A] md:border-white rounded-[12px] md:bg-white overflow-hidden z-10">
                 <Image
                   src="/images/top_image.png"
-                  width={96}
-                  height={96}
+                  width={200}
+                  height={200}
                   className="w-full h-auto rounded-[12px]"
                   alt="center"
                 />
@@ -61,8 +61,8 @@ const SeekPartners = () => {
               <div className="absolute bottom-[-50px] right-[-50px] w-[167px] h-[167px] border-[6px] md:border-[12px] border-[#1A1A1A] md:border-white rounded-[12px] md:bg-white overflow-hidden z-10">
                 <Image
                   src="/images/bottom_image.png"
-                  width={96}
-                  height={96}
+                  width={200}
+                  height={200}
                   className=" w-full h-auto rounded-[12px]"
                   alt="center"
                 />

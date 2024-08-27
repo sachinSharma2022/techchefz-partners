@@ -87,7 +87,7 @@ const Partnerships = () => {
               Explore <span className="text-grad-blue">Partnership Possibilities</span> with TechChefz.
             </h2>
           </div>
-          <p className="text-white opacity-60 text-[1.25rem] lg:w-1/3 font-normal leading-[1.875rem] ">
+          <p className="text-white opacity-60 text-[1.25rem] lg:w-1/3 font-normal leading-[1.875rem]">
             Partnership avenues tailored to your needs and goals. Join us in
             shaping innovation, driving growth together.
           </p>
@@ -185,7 +185,7 @@ const Partnerships = () => {
                             width={540}
                             height={360}
                             alt=""
-                            className="rounded-[12px]"
+                            className="h-full rounded-[12px] object-cover"
                           />
                         </div>
                         <div className="lg:pl-24">

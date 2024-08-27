@@ -41,11 +41,10 @@ const GlobalPartners = () => {
       title: "WondrLab",
       description: "We are in the business of providing brand strategy",
     },
-
   ];
   return (
-    <section className="lg:pl-16 py-[120px] relative bg-[#111111]">
-      <div className="mx-auto">
+    <section className="lg:pl-16 py-[120px] relative bg-[#111111] pb-[500px]">
+      <div className="container mx-auto">
         <p className="text-white text-[16px] leading-[24px] font-normal md:font-bold mb-4 opacity-80">
           CURRENT PARTNERS
         </p>
@@ -55,6 +54,8 @@ const GlobalPartners = () => {
             <span className="text-grad-blue">B2B Global Partner</span>
           </h2>
         </div>
+
+        <div className="absolute w-full">
           <Swiper
             slidesPerView={4.4}
             spaceBetween={30}
@@ -76,6 +77,7 @@ const GlobalPartners = () => {
             ))}
           </Swiper>
         </div>
+      </div>
     </section>
   );
 };

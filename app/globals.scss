@@ -78,3 +78,21 @@ input:-webkit-autofill {
     }
   }
 }
+
+
+.mask1 {
+  -webkit-mask-image: url("/images/hero-img-bg.svg");
+  mask-image: url("/images/hero-img-bg.svg");
+  mask-size: 100%;
+  mask-repeat: no-repeat;    
+}
+
+.border-mask {
+  background-image: url("/images/border-mask.svg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}

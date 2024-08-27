@@ -34,7 +34,7 @@ const WhyPartnerWithUs = ({ whyPartnerWithUsData }) => {
                 <h4 className="text-white text-[20px] md:text-[24px] leading-[28.8px] font-medium mb-4">
                   {items.title}
                 </h4>
-                <p className="text-white text-[16px] leading-[24px] font-normal opacity-80">
+                <p className="text-white text-[16px] leading-[24px] font-normal opacity-60">
                   {items.text}
                 </p>
               </div>
