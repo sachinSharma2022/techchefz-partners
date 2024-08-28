@@ -9,7 +9,7 @@ import { Autoplay } from "swiper/modules";
 
 const TrustedPartners = ({ trustedPartnersData }) => {
   return (
-    <section className="relative bg-[#111111] h-[101px] flex items-center">
+    <section className="relative bg-[#111111] lg:h-[101px] flex items-center">
       <div className="px-4 md:px-0 container mx-auto">
         <div className="flex flex-wrap items-center">
           <div className="w-full lg:w-[30%] xl:w-[20%] flex-initial flex-shrink-0 mb-8 md:mb-0 md:border-r md:border-[#FFFFFF1F]">
@@ -19,7 +19,26 @@ const TrustedPartners = ({ trustedPartnersData }) => {
           </div>
           <div className="flex w-full lg:w-[60%] xl:w-[80%] flex-initial flex-shrink-0">
             <Swiper
-              slidesPerView={4.4}
+              breakpoints={{
+                569: {
+                  slidesPerView: 1,
+                },
+                767: {
+                  slidesPerView: 2,
+                },
+                1200: {
+                  slidesPerView: 3,
+                },
+                1500: {
+                  slidesPerView: 4.4,
+                },
+                2400: {
+                  slidesPerView: 5,
+                },
+                4000: {
+                  slidesPerView: 7,
+                },
+              }}
               spaceBetween={30}
               className="mySwiper"
               modules={[Autoplay]}

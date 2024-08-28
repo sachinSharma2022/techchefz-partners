@@ -12,7 +12,7 @@ const Banner = () => {
               TechChefz’s{" "}
               <span className="block lg:w-full w-2/3">Partner Program.</span>
             </h3>
-            <p className="text-[20px] opacity-60 text-white lg:mt-8 mt-5 lg:mb-14 mb-12 w-2/5">
+            <p className="text-[20px] opacity-60 text-white lg:mt-8 mt-5 lg:mb-14 mb-12 lg:w-2/5">
               Our Partner Program gives you access to one of the broadest SaaS
               product portfolios in the industry, training to build powerful
               product capabilities.
