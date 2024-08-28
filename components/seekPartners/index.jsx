@@ -37,8 +37,8 @@ const SeekPartners = () => {
         </h2>
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-[40%] flex-initial flex-shrink-0">
-            <div className="relative mt-20 ml-10 max-w-[400px]">
-              <div className="absolute top-[-50px] left-[-50px] w-[167px] h-[167px] border-[6px] md:border-[12px] border-[#1A1A1A] md:border-white rounded-[12px] md:bg-white overflow-hidden z-10">
+            <div className="relative mt-20 ml-10 lg:max-w-[400px]">
+              <div className="absolute top-[-50px] left-[-50px] lg:w-[167px] lg:h-[167px] border-[6px] md:border-[12px] border-[#1A1A1A] md:border-white rounded-[12px] md:bg-white overflow-hidden z-10">
                 <Image
                   src="/images/top_image.png"
                   width={200}
@@ -48,7 +48,7 @@ const SeekPartners = () => {
                 />
               </div>
 
-              <div className="w-[380px] h-[427px] relative">
+              <div className="lg:w-[380px] w-[250px] lg:h-[427px] relative">
                 <Image
                   src="/images/center_image.png"
                   width={500}
@@ -58,7 +58,7 @@ const SeekPartners = () => {
                 />
               </div>
 
-              <div className="absolute bottom-[-50px] right-[-50px] w-[167px] h-[167px] border-[6px] md:border-[12px] border-[#1A1A1A] md:border-white rounded-[12px] md:bg-white overflow-hidden z-10">
+              <div className="absolute bottom-[-50px] lg:right-[-50px] right-[0] lg:w-[167px] lg:h-[167px] border-[6px] md:border-[12px] border-[#1A1A1A] md:border-white rounded-[12px] md:bg-white overflow-hidden z-10">
                 <Image
                   src="/images/bottom_image.png"
                   width={200}
@@ -88,7 +88,8 @@ const SeekPartners = () => {
                         width={18}
                         height={20}
                         className="mr-6"
-                      />{" "}
+                        alt=""
+                      />
                       {items.text}
                     </Link>
                   </li>
