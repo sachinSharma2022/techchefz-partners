@@ -9,7 +9,7 @@ import { Autoplay } from "swiper/modules";
 
 const TrustedPartners = ({ trustedPartnersData }) => {
   return (
-    <section className="lg:px-16 py-16 relative bg-[#111111]">
+    <section className="relative bg-[#111111] h-[101px] flex items-center">
       <div className="px-4 md:px-0 container mx-auto">
         <div className="flex flex-wrap items-center">
           <div className="w-full lg:w-[30%] xl:w-[20%] flex-initial flex-shrink-0 mb-8 md:mb-0 md:border-r md:border-[#FFFFFF1F]">

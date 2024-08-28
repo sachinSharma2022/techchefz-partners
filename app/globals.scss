@@ -37,7 +37,6 @@ h6 {
   font-family: font(secondary);
 }
 
-
 // Primary Container
 .primary-container {
   max-width: 1440px;
@@ -58,15 +57,14 @@ input:-webkit-autofill:active {
 input:-webkit-autofill {
   -webkit-text-fill-color: color(primary-white) !important;
 }
-.text-grad-blue{
-  background: linear-gradient(to right, #1E8AF2, #05BED7);
+.text-grad-blue {
+  background: linear-gradient(to right, #1e8af2, #05bed7);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 // Testimonials Card
 .testimonial-card {
-
   .testimonial-img {
     display: none;
   }
@@ -79,20 +77,14 @@ input:-webkit-autofill {
   }
 }
 
-
-.mask1 {
-  -webkit-mask-image: url("/images/hero-img-bg.svg");
-  mask-image: url("/images/hero-img-bg.svg");
-  mask-size: 100%;
-  mask-repeat: no-repeat;    
+.mask1 svg {
+  height: 472px;
+  right: -10vw;
+  position: absolute;
+  top: 18vh;
+  bottom: 0;
 }
 
-.border-mask {
-  background-image: url("/images/border-mask.svg");
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
+.bg-hero-pattern {
+  height: calc(100dvh - 181px);
 }
