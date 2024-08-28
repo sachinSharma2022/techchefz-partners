@@ -13,11 +13,11 @@ const TrustedPartners = ({ trustedPartnersData }) => {
       <div className="px-4 md:px-0 container mx-auto">
         <div className="flex flex-wrap items-center">
           <div className="w-full lg:w-[30%] xl:w-[20%] flex-initial flex-shrink-0 mb-8 md:mb-0 md:border-r md:border-[#FFFFFF1F]">
-            <h2 className="text-white text-[16px] md:text-[20px] leading-[18.56px] md:leading-[23.2px] font-medium">
+            <h2 className="text-white text-[16px] md:text-[20px] leading-[18.56px] md:leading-[23.2px] font-medium pl-16">
               Our trusted <br className="hidden md:block" /> Partners :
             </h2>
           </div>
-          <div className="flex w-full lg:w-[60%] xl:w-[80%] flex-initial flex-shrink-0">
+          <div className="flex w-full lg:w-[60%] xl:w-[80%] flex-initial flex-shrink-0 pl-5">
             <Swiper
               breakpoints={{
                 569: {

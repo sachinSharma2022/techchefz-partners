@@ -54,7 +54,7 @@ const Testimonials = () => {
     },
   ];
   return (
-    <section className="bg-white lg:px-16 py-[120px] testimonial-card relative pb-[600px]">
+    <section className="bg-white lg:px-16 py-[120px] testimonial-card relative pb-[600px] overflow-x-hidden">
       <div className="container mx-auto">
         <div className="text-dreamless-sleep">
           <h6 className="text-[16px] uppercase font-bold mb-3">Testimonials</h6>

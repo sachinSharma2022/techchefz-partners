@@ -43,7 +43,7 @@ const GlobalPartners = () => {
     },
   ];
   return (
-    <section className="lg:pl-16 py-[120px] relative bg-[#111111] pb-[500px]">
+    <section className="lg:pl-16 py-[120px] relative bg-[#111111] pb-[500px] overflow-x-hidden">
       <div className="container mx-auto">
         <p className="text-white text-[16px] leading-[24px] font-normal md:font-bold mb-4 opacity-80">
           CURRENT PARTNERS

@@ -37,7 +37,7 @@ const PathToPartnership = () => {
     },
   ];
   return (
-    <section className="lg:px-16 py-[120px] relative bg-[#1F1F1F] md:bg-white">
+    <section className="lg:px-16 py-[120px] relative bg-[#1F1F1F] md:bg-white overflow-x-hidden">
       <div className="px-4 md:px-0 container mx-auto">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-[50%] flex-initial flex-shrink-0">
