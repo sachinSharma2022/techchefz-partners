@@ -43,21 +43,38 @@ const GlobalPartners = () => {
     },
   ];
   return (
-    <section className="lg:pl-16 py-[120px] relative bg-[#111111] pb-[500px] overflow-x-hidden">
+    <section className="lg:pl-16 lg:py-[120px] py-[70px] pl-5 relative bg-[#111111] overflow-x-hidden">
       <div className="container mx-auto">
         <p className="text-white text-[16px] leading-[24px] font-normal md:font-bold mb-4 opacity-80">
           CURRENT PARTNERS
         </p>
-        <div className="flex items-end justify-between mb-14">
+        <div className="flex items-end justify-between lg:mb-14 mb-10">
           <h2 className="text-white text-[32px] md:text-[44px] leading-[40px] md:leading-[57.2px] font-medium">
             Check out our <br />{" "}
             <span className="text-grad-blue">B2B Global Partner</span>
           </h2>
         </div>
 
-        <div className="absolute w-full">
+        <div className="w-full">
           <Swiper
             slidesPerView={4.4}
+            breakpoints={{
+                300: {
+                  slidesPerView: 1.3,
+                },
+                1200: {
+                  slidesPerView: 3,
+                },
+                1500: {
+                  slidesPerView: 4.4,
+                },
+                2400: {
+                  slidesPerView: 5,
+                },
+                4000: {
+                  slidesPerView: 7,
+                },
+              }}
             spaceBetween={30}
             className="mySwiper"
             modules={[Autoplay]}

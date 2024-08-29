@@ -5,18 +5,18 @@ import { Button } from "../ui/button";
 const PartnerProgram = () => {
   return (
     <section className="bg-[#1a1a1a]">
-      <div className="container mx-auto lg:px-16 py-[140px] relative">
-        <div className="overflow-hidden rounded-xl">
+      <div className="container mx-auto lg:px-16 lg:py-[140px] py-[70px] relative">
+        <div className="overflow-hidden lg:rounded-xl">
           <Image
             src="/images/partner-bg.jpg"
-            className="w-full opacity-80"
+            className="w-full lg:opacity-80 opacity-50 h-[400px] object-cover"
             width={1200}
             height={400}
             alt=""
           />
         </div>
 
-        <div className="lg:grid block grid-cols-2 gap-x-36 mt-[-300px] top-60 left-0 lg:px-20 w-full px-4">
+        <div className="lg:grid block grid-cols-2 gap-x-36 mt-[-320px] top-60 left-0 lg:px-20 w-full px-4">
           <div className="text-white bg-dreamless-sleep rounded-[20px] lg:py-8 lg:mt-0 mt-[-70px] relative p-8 border-4 border-[#1e8af2] lg:w-[477px]">
             <h3 className="lg:text-[44px] text-[32px] font-medium m-0 lg:leading-[3.3rem] leading-[2.3rem] lg:mb-8 mb-6">
               Want to join the{" "}

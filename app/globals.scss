@@ -1,3 +1,5 @@
+@import '../styles/partials/config';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -71,6 +73,10 @@ input:-webkit-autofill {
   }
   .swiper-slide-active {
     width: 50% !important;
+
+    @include mobile{
+      width: 100% !important;
+    }
 
     .testimonial-img {
       display: block;

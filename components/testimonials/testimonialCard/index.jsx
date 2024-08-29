@@ -1,20 +1,20 @@
 import Image from "next/image";
 import React from "react";
 
-const TestimonialCard = ({description, name, designation }) => {
+const TestimonialCard = ({ description, name, designation }) => {
   return (
-    <div className="text-dreamless-sleep bg-beluga rounded-[20px] flex h-[466px]">
-      <div className="min-w-[300px] h-[466px] relative testimonial-img">
+    <div className="lg:text-dreamless-sleep lg:bg-beluga text-white border rounded-[20px] lg:flex w-full lg:h-[466px] pb-[80px] lg:pb-[0]">
+      <div className="lg:min-w-[300px] lg:h-[466px] h-[45px] w-[45px] lg:w-[300px] absolute bottom-5 lg:bottom-0 left-6 lg:left-0 lg:relative testimonial-img">
         <Image
           src="/images/user.jpg"
-          className="rounded-s-[20px] object-cover h-full"
+          className="lg:rounded-s-[20px] rounded-[50px] object-cover h-full"
           width={373}
           height={466}
           alt=""
         />
       </div>
 
-      <div className="p-7 w-full">
+      <div className="lg:p-7 p-5 w-full">
         <p className="text-[20px]">
           <span className="mb-3 block">
             <svg
@@ -30,9 +30,7 @@ const TestimonialCard = ({description, name, designation }) => {
               />
             </svg>
           </span>
-          <span className="opacity-60">
-          {description}
-          </span>
+          <span className="opacity-60">{description}</span>
         </p>
 
         <div className="mt-8">

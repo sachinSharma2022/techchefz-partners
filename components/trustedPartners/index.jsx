@@ -20,11 +20,8 @@ const TrustedPartners = ({ trustedPartnersData }) => {
           <div className="flex w-full lg:w-[60%] xl:w-[80%] flex-initial flex-shrink-0 lg:pl-5">
             <Swiper
               breakpoints={{
-                569: {
-                  slidesPerView: 1,
-                },
-                767: {
-                  slidesPerView: 3,
+                300: {
+                  slidesPerView: 3.5,
                 },
                 1200: {
                   slidesPerView: 3,
@@ -49,7 +46,7 @@ const TrustedPartners = ({ trustedPartnersData }) => {
             >
               {trustedPartnersData?.map((items) => (
                 <SwiperSlide key={items?.id}>
-                  <div className="w-[200px] h-[50px]">
+                  <div className="md:w-[200px] h-[50px]">
                     <Image
                       src={items?.logoUrl}
                       width={82}
