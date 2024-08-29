@@ -17,7 +17,7 @@ const PartnerProgram = () => {
         </div>
 
         <div className="lg:grid block grid-cols-2 gap-x-36 mt-[-300px] top-60 left-0 lg:px-20 w-full px-4">
-          <div className="text-white bg-dreamless-sleep rounded-[20px] lg:py-8 lg:mt-0 mt-[-70px] relative p-8 border-4 border-[#1e8af2] w-[477px]">
+          <div className="text-white bg-dreamless-sleep rounded-[20px] lg:py-8 lg:mt-0 mt-[-70px] relative p-8 border-4 border-[#1e8af2] lg:w-[477px]">
             <h3 className="lg:text-[44px] text-[32px] font-medium m-0 lg:leading-[3.3rem] leading-[2.3rem] lg:mb-8 mb-6">
               Want to join the{" "}
               <span className="block text-grad-blue">Partner Program ?</span>

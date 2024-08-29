@@ -3,7 +3,7 @@ import React from "react";
 
 const ElevateExperience = ({ elevateExperienceData }) => {
   return (
-    <section className="lg:px-16 py-[120px] relative bg-[#1A1A1A]">
+    <section className="lg:px-16 lg:py-[120px] py-[70px] relative bg-[#1A1A1A]">
       <div className="px-4 md:px-0 container mx-auto">
         <p className="text-white text-[16px] leading-[24px] font-normal md:font-bold mb-4 uppercase opacity-80">
           PERKS
@@ -37,7 +37,7 @@ const ElevateExperience = ({ elevateExperienceData }) => {
                   alt="bg-image"
                 />
               </div>
-              <div className="relative z-10 mb-28">
+              <div className="relative z-10 lg:mb-28 mb-16">
                 <Image
                   src={items?.logo}
                   width={270}

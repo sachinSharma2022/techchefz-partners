@@ -3,7 +3,7 @@ import React from "react";
 
 const WhyPartnerWithUs = ({ whyPartnerWithUsData }) => {
   return (
-    <section className="lg:px-16 py-[120px] relative bg-secondary">
+    <section className="lg:px-16 lg:py-[120px] py-[70px] relative bg-secondary">
       <div className="px-4 md:px-0 container mx-auto">
         <div className="md:max-w-[993px] mx-auto text-center mb-14">
           <p className="text-white text-[16px] leading-[24px] font-normal md:font-bold uppercase mb-4 opacity-80">
@@ -20,7 +20,7 @@ const WhyPartnerWithUs = ({ whyPartnerWithUsData }) => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 md:gap-12">
           {whyPartnerWithUsData?.map((items) => (
-            <div key={items.id} className="text-center py-8">
+            <div key={items.id} className="text-center py-8 last-of-type:pb-0">
               <div className="w-full h-[147px] mb-10">
                 <Image
                   src={items.imgUrl}
