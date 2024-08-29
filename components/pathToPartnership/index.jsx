@@ -37,19 +37,19 @@ const PathToPartnership = () => {
     },
   ];
   return (
-    <section className="lg:px-16 lg:py-[120px] py-[70px] relative bg-[#1F1F1F] md:bg-white overflow-x-hidden">
+    <section className="lg:px-16 lg:py-[120px] py-[70px] relative bg-[#1F1F1F] lg:bg-white overflow-x-hidden">
       <div className="px-4 lg:px-0 lg:pr-4 pr-0  container mx-auto">
         <div className="flex flex-wrap justify-between">
-          <div className="w-full md:w-[50%] flex-initial flex-shrink-0">
+          <div className="w-full lg:w-[50%] flex-initial flex-shrink-0">
             <div className="mb-14">
-              <p className="text-[#FFFFFF] md:text-[#111111] text-[16px] leading-[24px] font-normal md:font-bold mb-4 uppercase opacity-80">
+              <p className="text-[#FFFFFF] lg:text-[#111111] text-[16px] leading-[24px] font-normal lg:font-bold mb-4 uppercase opacity-80">
                 PATH TO PARTNERSHIP
               </p>
-              <h2 className="text-white md:text-[#111111] text-[32px] md:text-[44px] leading-[40px] md:leading-[57.2px] font-medium mb-4">
+              <h2 className="text-white lg:text-[#111111] text-[32px] lg:text-[44px] leading-[40px] lg:leading-[57.2px] font-medium mb-4">
                 Tailored Opportunities <br /> Aligned with{" "}
                 <span className="text-grad-blue">Your Expertise</span>
               </h2>
-              <p className="text-white md:text-[#111111] text-[20px] leading-[30px] font-normal opacity-60">
+              <p className="text-white lg:text-[#111111] text-[20px] leading-[30px] font-normal opacity-60">
                 Choose a path aligned with your strengths, and join us in
                 shaping innovative solutions. Together, we&apos;ll amplify
                 success, foster collaboration, and navigate the future of
@@ -57,7 +57,7 @@ const PathToPartnership = () => {
               </p>
             </div>
           </div>
-          <div className="w-full md:w-[40%] flex-initial flex-shrink-0 hidden md:block">
+          <div className="w-full lg:w-[40%] flex-initial flex-shrink-0 hidden lg:block">
             <Image
               src="/images/partnership.png"
               width={200}
@@ -68,7 +68,7 @@ const PathToPartnership = () => {
           </div>
         </div>
 
-        <div className="md:absolute w-full md:bottom-40">
+        <div className="lg:absolute w-full lg:bottom-40">
           <Swiper
             slidesPerView={4.4}
             breakpoints={{

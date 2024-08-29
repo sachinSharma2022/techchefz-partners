@@ -10,26 +10,26 @@ import "swiper/css";
 const ElevateExperience = ({ elevateExperienceData }) => {
   return (
     <section className="lg:px-16 lg:py-[120px] py-[70px] relative bg-[#1A1A1A]">
-      <div className="px-4 md:px-0 container mx-auto">
-        <p className="text-white text-[16px] leading-[24px] font-normal md:font-bold mb-4 uppercase opacity-80">
+      <div className="px-4 lg:px-0 container mx-auto">
+        <p className="text-white text-[16px] leading-[24px] font-normal lg:font-bold mb-4 uppercase opacity-80">
           PERKS
         </p>
         <div className="flex flex-wrap items-end justify-between mb-14">
-          <h2 className="text-white text-[32px] md:text-[44px] leading-[40px] md:leading-[57.2px] font-medium mb-5 md:mb-0">
+          <h2 className="text-white text-[32px] lg:text-[44px] leading-[40px] lg:leading-[57.2px] font-medium mb-5 lg:mb-0">
             Elevate Your{" "}
             <span className="text-grad-blue">
-              Partner <br className="hidden md:block" /> Experience
+              Partner <br className="hidden lg:block" /> Experience
             </span>{" "}
             with us.
           </h2>
-          <p className="w-full md:w-[50%] text-white text-[16px] md:text-[20px] leading-[24px] md:leading-[30px] font-normal opacity-60">
+          <p className="w-full lg:w-[50%] text-white text-[16px] lg:text-[20px] leading-[24px] lg:leading-[30px] font-normal opacity-60">
             We believe in a customer-centric ethic without and people-centric
             paradigm within. With a strong sense of community, ownership, and
             collaboration.
           </p>
         </div>
 
-        <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="hidden lg:grid grid-cols-1 lg:grid-cols-3 gap-12">
           {elevateExperienceData?.map((items) => (
             <div
               key={items?.id}
@@ -75,7 +75,7 @@ const ElevateExperience = ({ elevateExperienceData }) => {
           ))}
         </div>
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <Swiper
             spaceBetween={20}
             slidesPerView={1.2}

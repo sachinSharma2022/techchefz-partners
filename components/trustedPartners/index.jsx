@@ -10,11 +10,11 @@ import { Autoplay } from "swiper/modules";
 const TrustedPartners = ({ trustedPartnersData }) => {
   return (
     <section className="relative bg-[#111111] lg:h-[101px] flex items-center">
-      <div className="px-4 md:px-0 container mx-auto py-5 lg:py-0">
+      <div className="px-4 lg:px-0 container mx-auto py-5 lg:py-0">
         <div className="flex flex-wrap items-center">
-          <div className="w-full lg:w-[30%] xl:w-[20%] flex-initial flex-shrink-0 mb-5 lg:mb-0 md:border-r md:border-[#FFFFFF1F]">
-            <h2 className="text-white text-[16px] md:text-[20px] leading-[18.56px] md:leading-[23.2px] font-medium lg:pl-16">
-              Our trusted <br className="hidden md:block" /> Partners :
+          <div className="w-full lg:w-[30%] xl:w-[20%] flex-initial flex-shrink-0 mb-5 lg:mb-0 lg:border-r lg:border-[#FFFFFF1F] pl-2">
+            <h2 className="text-white text-[16px] lg:text-[20px] leading-[18.56px] lg:leading-[23.2px] font-medium lg:pl-16">
+              Our trusted <br className="hidden lg:block" /> Partners :
             </h2>
           </div>
           <div className="flex w-full lg:w-[60%] xl:w-[80%] flex-initial flex-shrink-0 lg:pl-5">
@@ -46,7 +46,7 @@ const TrustedPartners = ({ trustedPartnersData }) => {
             >
               {trustedPartnersData?.map((items) => (
                 <SwiperSlide key={items?.id}>
-                  <div className="md:w-[200px] h-[50px]">
+                  <div className="lg:w-[200px] h-[50px]">
                     <Image
                       src={items?.logoUrl}
                       width={82}
