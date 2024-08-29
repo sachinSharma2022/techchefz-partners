@@ -68,11 +68,8 @@ const Testimonials = () => {
               slidesPerView={3}
               spaceBetween={30}
               breakpoints={{
-                569: {
+                300: {
                   slidesPerView: 1,
-                },
-                767: {
-                  slidesPerView: 2,
                 },
                 1200: {
                   slidesPerView: 3,

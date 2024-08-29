@@ -68,9 +68,26 @@ const PathToPartnership = () => {
           </div>
         </div>
 
-        <div className="absolute w-full bottom-40">
+        <div className="md:absolute w-full md:bottom-40">
           <Swiper
             slidesPerView={4.4}
+            breakpoints={{
+                300: {
+                  slidesPerView: 1.3,
+                },
+                1200: {
+                  slidesPerView: 3,
+                },
+                1500: {
+                  slidesPerView: 4.4,
+                },
+                2400: {
+                  slidesPerView: 5,
+                },
+                4000: {
+                  slidesPerView: 7,
+                },
+              }}
             spaceBetween={30}
             modules={[Autoplay]}
             autoplay={{

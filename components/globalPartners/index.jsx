@@ -58,6 +58,23 @@ const GlobalPartners = () => {
         <div className="absolute w-full">
           <Swiper
             slidesPerView={4.4}
+            breakpoints={{
+                300: {
+                  slidesPerView: 1.3,
+                },
+                1200: {
+                  slidesPerView: 3,
+                },
+                1500: {
+                  slidesPerView: 4.4,
+                },
+                2400: {
+                  slidesPerView: 5,
+                },
+                4000: {
+                  slidesPerView: 7,
+                },
+              }}
             spaceBetween={30}
             className="mySwiper"
             modules={[Autoplay]}
