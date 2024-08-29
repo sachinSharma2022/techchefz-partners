@@ -9,7 +9,7 @@ import "swiper/css";
 
 const ElevateExperience = ({ elevateExperienceData }) => {
   return (
-    <section className="lg:px-16 lg:py-[120px] py-[70px] relative bg-[#1A1A1A]">
+    <section className="lg:px-16 lg:py-[120px] py-[70px] relative  bg-[#1A1A1A]">
       <div className="px-4 lg:px-0 container mx-auto">
         <p className="text-white text-[16px] leading-[24px] font-normal lg:font-bold mb-4 uppercase opacity-80">
           PERKS

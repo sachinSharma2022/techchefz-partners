@@ -109,8 +109,10 @@ const HomePage = async () => {
       <Banner />
       <TrustedPartners trustedPartnersData={trustedPartnersData} />
       <WhyPartnerWithUs whyPartnerWithUsData={whyPartnerWithUsData} />
-      <SeekPartners />
-      <ElevateExperience elevateExperienceData={elevateExperienceData} />
+      <div className="flex flex-col-reverse lg:flex-col">
+        <SeekPartners />
+        <ElevateExperience elevateExperienceData={elevateExperienceData} />
+      </div>
       <GlobalPartners />
       <PathToPartnership />
       <Partnerships />

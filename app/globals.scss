@@ -103,3 +103,25 @@ input:-webkit-autofill {
     height: auto;
   }
 }
+
+
+// testimonials-thumb
+.testimonials-thumb {
+
+  .thumb-img {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    scale: 0.8;
+    opacity: 0.6;
+    border: 2px solid transparent;
+  }
+
+  .swiper-slide-thumb-active .thumb-img {
+    opacity: 1;
+    border-color: rgba(white, 0.4);
+    scale: 1;
+  }
+}

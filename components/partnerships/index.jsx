@@ -76,7 +76,7 @@ const Partnerships = () => {
   ];
 
   return (
-    <div className="lg:px-16 lg:py-[120px] py-16 pb-0 relative bg-secondary text-white">
+    <div className="lg:px-16 lg:py-[120px] py-16 pb-0 relative bg-[#111111] lg:bg-secondary text-white">
       <div className="container mx-auto">
         <div className="lg:flex items-center lg:px-0 px-5">
           <div>

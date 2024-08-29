@@ -26,7 +26,7 @@ const SeekPartners = () => {
     },
   ];
   return (
-    <section className="lg:px-16 lg:py-[120px] py-[70px] relative bg-[#1A1A1A] lg:bg-[#ffffff]">
+    <section className="lg:px-16 lg:py-[120px] py-[70px] relative bg-secondary lg:bg-[#ffffff]">
       <div className="px-4 lg:px-0 container mx-auto">
         <h2 className="text-white lg:text-[#111111] text-[32px] lg:text-[44px] leading-[40px] lg:leading-[57.2px] font-medium mb-12">
           We seek partners who share our passion for{" "}

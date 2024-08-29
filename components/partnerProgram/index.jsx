@@ -36,14 +36,14 @@ const PartnerProgram = () => {
           <div className="text-white lg:mt-0 mt-5 relative">
             <p className="mb-3">Number Insights :</p>
             <div className="flex gap-10">
-              <div className="bg-white bg-opacity-15 rounded-[20px] p-[24px] border w-[166px]">
-                <div className="text-[44px] font-medium leading-10 mb-4">
+              <div className="bg-white bg-opacity-15 rounded-[20px] p-[24px] border lg:w-[166px]">
+                <div className="text-[40px] lg:text-[44px] font-medium leading-10 mb-4">
                   500+
                 </div>
                 <p>Technology Innovation</p>
               </div>
-              <div className="bg-white bg-opacity-15 rounded-[20px] p-[24px] border w-[166px]">
-                <div className="text-[44px] font-medium leading-10 mb-4">
+              <div className="bg-white bg-opacity-15 rounded-[20px] p-[24px] border lg:w-[166px]">
+                <div className="text-[40px] lg:text-[44px] font-medium leading-10 mb-4">
                   200+
                 </div>
                 <p>AI solutions integrated.</p>
