@@ -7,9 +7,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
+import { Icons } from "../icons";
 
 const GlobalPartners = () => {
+  const navigationPrevRef = React.useRef(null);
+  const navigationNextRef = React.useRef(null);
   const cardData = [
     {
       imgUrl: "/images/Wondrlap_1.png",
@@ -59,28 +62,36 @@ const GlobalPartners = () => {
           <Swiper
             slidesPerView={4.4}
             breakpoints={{
-                300: {
-                  slidesPerView: 1.3,
-                },
-                1200: {
-                  slidesPerView: 3,
-                },
-                1500: {
-                  slidesPerView: 4.4,
-                },
-                2400: {
-                  slidesPerView: 5,
-                },
-                4000: {
-                  slidesPerView: 7,
-                },
-              }}
+              300: {
+                slidesPerView: 1.3,
+              },
+              1200: {
+                slidesPerView: 3,
+              },
+              1500: {
+                slidesPerView: 4.4,
+              },
+              2400: {
+                slidesPerView: 5,
+              },
+              4000: {
+                slidesPerView: 7,
+              },
+            }}
             spaceBetween={30}
             className="mySwiper"
-            modules={[Autoplay]}
+            navigation={{ nextEl: ".arrow-right", prevEl: ".arrow-left" }}
+            modules={[Autoplay, Navigation]}
             autoplay={{
-              delay: 2500,
+              delay: 25500,
               disableOnInteraction: false,
+            }}
+            onSwiper={(swiper) => {
+              swiper.params.navigation.prevEl = navigationPrevRef.current;
+              swiper.params.navigation.nextEl = navigationNextRef.current;
+              swiper.navigation.destroy();
+              swiper.navigation.init();
+              swiper.navigation.update();
             }}
           >
             {cardData.map((items) => (
@@ -93,6 +104,15 @@ const GlobalPartners = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+
+        <div className="slider-controller testimonial-control">
+          <button ref={navigationPrevRef} className="btn btn-arrow btn-back">
+            <Icons.ArrowLeft size={20} className="asset-white" />
+          </button>
+          <button ref={navigationNextRef} className="btn btn-arrow btn-move">
+            <Icons.ArrowRight size={20} />
+          </button>
         </div>
       </div>
     </section>
