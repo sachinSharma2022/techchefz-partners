@@ -85,11 +85,11 @@ const TestimonialCard = () => {
       >
         {cardData.map((items) => (
           <SwiperSlide key={items?.id}>
-            <div className="lg:text-dreamless-sleep lg:bg-beluga text-white border rounded-[20px] lg:flex w-full lg:h-[466px] pb-[80px] lg:pb-[0]">
+            <div className="lg:text-dreamless-sleep lg:bg-beluga text-white border rounded-[20px] lg:flex w-full lg:h-[466px] pb-[80px] lg:pb-[0] overflow-hidden testimonial-slide">
               <div className="lg:min-w-[300px] lg:h-[466px] h-[45px] w-[45px] lg:w-[300px] absolute bottom-5 lg:bottom-0 left-6 lg:left-0 lg:relative testimonial-img">
                 <Image
                   src="/images/user.jpg"
-                  className="lg:rounded-s-[20px] rounded-[50px] object-cover h-full"
+                  className="object-cover h-full"
                   width={373}
                   height={466}
                   alt=""

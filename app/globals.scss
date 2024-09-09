@@ -73,6 +73,11 @@ input:-webkit-autofill {
   .testimonial-img {
     display: none;
   }
+
+  .testimonial-slide {
+    border-color: transparent;
+  }
+
   .swiper-slide-active {
     width: 50% !important;
 
@@ -82,6 +87,11 @@ input:-webkit-autofill {
 
     .testimonial-img {
       display: block;
+    }
+
+    .testimonial-slide {
+      border-color: #05BED7;
+      
     }
   }
 }
