@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React from "react";
 // import required modules
@@ -55,7 +55,7 @@ const TestimonialCard = () => {
     },
   ];
   return (
-    <div className="w-full bg-black lg:pl-16 lg:px-0 px-5">
+    <div className="w-full bg-black absolute">
       <Swiper
         slidesPerView={3}
         spaceBetween={30}

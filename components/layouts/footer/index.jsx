@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/inputCustom";
 const Footer = () => {
   return (
     <footer className={styles.footerSection}>
-      <div className={cn("primary-container")}>
+      <div className={cn("container mx-auto")}>
         <div className={styles.footLogoFlex}>
           <div className={styles.footLogo}>
             <ImageCustom
@@ -22,43 +22,43 @@ const Footer = () => {
         </div>
 
         <div className="lg:grid grid-cols-2">
-            <div className={styles.footLeftPanel}>
-              <p className={styles.description}>
-                Stay at the forefront of innovation, trends, and industry
-                insights by subscribing to our newsletter.
-              </p>
+          <div className={styles.footLeftPanel}>
+            <p className={styles.description}>
+              Stay at the forefront of innovation, trends, and industry insights
+              by subscribing to our newsletter.
+            </p>
 
-              <div className={styles.partnerCard}>
-                <div className={styles.partnerCols}>
-                  <Link href="/">
-                    Become our Partner <Icons.ArrowRight size={16} />
-                  </Link>
-                  <p>Join our partnership network now!</p>
-                </div>
-                <ImageCustom
-                  src="/images/partner.jpg"
-                  width={294}
-                  height={198}
-                  alt="partner-img"
-                />
+            <div className={styles.partnerCard}>
+              <div className={styles.partnerCols}>
+                <Link href="/">
+                  Become our Partner <Icons.ArrowRight size={16} />
+                </Link>
+                <p>Join our partnership network now!</p>
               </div>
+              <ImageCustom
+                src="/images/partner.jpg"
+                width={294}
+                height={198}
+                alt="partner-img"
+              />
+            </div>
 
-              <div className={styles.subscribe}>
-                <h4 className="mb-3">Stay Ahead of the Tech Curve</h4>
-                <div className={styles.formFlex}>
-                  <Input
-                    inputFloatingStyle={styles.inputFloatingStyle}
-                    inputStyle={styles.inputStyle}
-                    placeholder="Business Email Address"
-                  />
-                  <div className="d-flex align-items-center">
-                    <Button variant="lightBlueBtn" size="lg">
-                      Subscribe <Icons.ArrowRight size={15} />
-                    </Button>
-                  </div>
+            <div className={styles.subscribe}>
+              <h4 className="mb-3">Stay Ahead of the Tech Curve</h4>
+              <div className={styles.formFlex}>
+                <Input
+                  inputFloatingStyle={styles.inputFloatingStyle}
+                  inputStyle={styles.inputStyle}
+                  placeholder="Business Email Address"
+                />
+                <div className="d-flex align-items-center">
+                  <Button variant="lightBlueBtn" size="lg">
+                    Subscribe <Icons.ArrowRight size={15} />
+                  </Button>
                 </div>
               </div>
             </div>
+          </div>
           <div>
             <div className={styles.footSocial}>
               <h4 className="mb-3">Follow Us on Social Media</h4>

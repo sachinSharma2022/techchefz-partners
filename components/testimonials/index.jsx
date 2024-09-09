@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <section className="bg-secondary lg:bg-white lg:py-[120px] py-[70px] relative overflow-x-hidden">
       <div className="container mx-auto">
-        <div className="lg:text-dreamless-sleep text-white lg:px-16 px-5">
+        <div className="lg:text-dreamless-sleep text-white">
           <h6 className="text-[16px] uppercase lg:font-bold font-normal lg:mb-3 mb-2 opacity-80">
             Testimonials
           </h6>
@@ -14,14 +14,14 @@ const Testimonials = () => {
             <span className="text-grad-blue">say about us.</span>
           </h2>
         </div>
-      </div>
 
-      <div className="hidden lg:block testimonial-card">
-        <TestimonialCard/>
+        <div className="hidden lg:block testimonial-card">
+          <TestimonialCard />
+        </div>
       </div>
 
       <div className="lg:hidden">
-      <TestimonialMobileCard/>
+        <TestimonialMobileCard />
       </div>
     </section>
   );
