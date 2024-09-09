@@ -1050,21 +1050,21 @@ export const Icons = {
     >
       <path
         d="M17 8.00024H1.00021"
-        stroke="#111111"
+        stroke="white"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M7.85718 14.8573L1.00013 8.00024"
-        stroke="#111111"
+        stroke="white"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M7.85718 1.14282L1.00013 7.99987"
-        stroke="#111111"
+        stroke="white"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

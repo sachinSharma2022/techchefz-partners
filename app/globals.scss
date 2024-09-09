@@ -1,4 +1,4 @@
-@import '../styles/partials/config';
+@import "../styles/partials/config";
 
 @tailwind base;
 @tailwind components;
@@ -81,7 +81,7 @@ input:-webkit-autofill {
   .swiper-slide-active {
     width: 50% !important;
 
-    @include mobile{
+    @include mobile {
       width: 100% !important;
     }
 
@@ -90,8 +90,7 @@ input:-webkit-autofill {
     }
 
     .testimonial-slide {
-      border-color: #05BED7;
-      
+      border-color: #05bed7;
     }
   }
 }
@@ -116,10 +115,8 @@ input:-webkit-autofill {
   }
 }
 
-
 // testimonials-thumb
 .testimonials-thumb {
-
   .thumb-img {
     width: 48px;
     height: 48px;
@@ -136,4 +133,71 @@ input:-webkit-autofill {
     border-color: rgba(white, 0.4);
     scale: 1;
   }
+}
+
+.slider-controller {
+  display: flex;
+  gap: 1.5rem;
+
+  @include mobile-tablet-p {
+    display: none;
+  }
+
+  button {
+    width: 3.75rem;
+    height: 3.75rem;
+
+    @include mobile-tablet-p {
+      width: 2.75rem;
+      height: 2.75rem;
+    }
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border-color: #111;
+  }
+
+  .btn-back.swiper-button-disabled {
+    background: transparent;
+    border-color: color(bg-gray);
+
+    svg {
+      filter: invert(1);
+    }
+  }
+
+  .btn-move.swiper-button-disabled {
+    background: transparent;
+    border-color: color(bg-gray);
+
+    svg {
+      filter: invert(1);
+    }
+  }
+
+  .btn-arrow {
+    background-color: color(primary-blue);
+    border: 0.14rem solid color(primary-blue);
+
+    &:hover,
+    &:focus {
+      background-color: color(primary-blue);
+      border-color: color(primary-blue);
+
+      svg {
+        filter: none;
+      }
+    }
+  }
+}
+
+
+.testimonial-control {
+  top: 190px;
+  right: 73px;
+  position: absolute;
 }
