@@ -46,7 +46,7 @@ const GlobalPartners = () => {
     },
   ];
   return (
-    <section className="lg:pl-16 lg:py-[120px] py-[70px] pl-5 relative bg-[#111111] overflow-x-hidden">
+    <section className="lg:pl-16 lg:py-[120px] py-[70px] pl-5 relative bg-[#111111] overflow-x-hidden lg:h-[800px]">
       <div className="container mx-auto">
         <p className="text-white text-[16px] leading-[24px] font-normal lg:font-bold mb-4 opacity-80">
           CURRENT PARTNERS
@@ -58,7 +58,7 @@ const GlobalPartners = () => {
           </h2>
         </div>
 
-        <div className="w-full">
+        <div className="w-full lg:absolute">
           <Swiper
             slidesPerView={4.4}
             breakpoints={{
@@ -68,18 +68,18 @@ const GlobalPartners = () => {
               1200: {
                 slidesPerView: 3,
               },
-              1500: {
-                slidesPerView: 4.4,
+              1300: {
+                slidesPerView: 4,
               },
-              2400: {
+              1600: {
                 slidesPerView: 5,
               },
-              4000: {
-                slidesPerView: 7,
+              2000: {
+                slidesPerView: 6,
               },
             }}
             spaceBetween={30}
-            className="mySwiper"
+            className="global-partner-slider"
             navigation={{ nextEl: ".arrow-right", prevEl: ".arrow-left" }}
             modules={[Autoplay, Navigation]}
             autoplay={{
@@ -106,7 +106,7 @@ const GlobalPartners = () => {
           </Swiper>
         </div>
 
-        <div className="slider-controller testimonial-control">
+        <div className="slider-controller testimonial-control dark-theme">
           <button ref={navigationPrevRef} className="btn btn-arrow btn-back">
             <Icons.ArrowLeft size={20} className="asset-white" />
           </button>

@@ -194,6 +194,16 @@ input:-webkit-autofill {
       }
     }
   }
+
+  &.dark-theme {
+
+   .swiper-button-disabled {
+  
+      svg {
+        filter: none;
+      }
+    }
+  }
 }
 
 
