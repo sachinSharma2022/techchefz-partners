@@ -140,7 +140,7 @@ input:-webkit-autofill {
   gap: 1.5rem;
 
   @include mobile-tablet-p {
-    display: none;
+    margin-top: 50px;
   }
 
   button {
@@ -168,6 +168,10 @@ input:-webkit-autofill {
 
     svg {
       filter: invert(1);
+
+      @include mobile-tablet-p {
+        filter: none;
+      }
     }
   }
 
@@ -177,6 +181,10 @@ input:-webkit-autofill {
 
     svg {
       filter: invert(1);
+
+      @include mobile-tablet-p {
+        filter: none;
+      }
     }
   }
 
@@ -211,4 +219,11 @@ input:-webkit-autofill {
   top: 190px;
   right: 73px;
   position: absolute;
+
+  @include mobile-tablet-p {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: auto;
+  }
 }

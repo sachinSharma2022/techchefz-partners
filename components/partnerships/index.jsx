@@ -80,7 +80,7 @@ const Partnerships = () => {
       <div className="container mx-auto">
         <div className="lg:flex items-center lg:px-0 px-5">
           <div>
-            <h6 className="text-[1rem] uppercase font-bold mb-3 opacity-80">
+            <h6 className="text-[1rem] uppercase font-bold mb-3 opacity-80 tracking-widest">
               Types of Partnerships
             </h6>
             <h2 className="text-[2.75rem] font-medium leading-[54px] lg:mb-10 mb-5">

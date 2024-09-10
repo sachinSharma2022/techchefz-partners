@@ -115,7 +115,7 @@ const PathToPartnership = () => {
           </Swiper>
         </div>
 
-        <div className="slider-controller top-4 relative">
+        <div className="slider-controller lg:top-4 relative">
           <button ref={navigationPrevRef} className="btn btn-arrow btn-back">
             <Icons.ArrowLeft size={20} className="asset-white" />
           </button>

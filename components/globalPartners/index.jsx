@@ -48,7 +48,7 @@ const GlobalPartners = () => {
   return (
     <section className="lg:pl-16 lg:py-[120px] py-[70px] pl-5 relative bg-[#111111] overflow-x-hidden lg:h-[800px]">
       <div className="container mx-auto">
-        <p className="text-white text-[16px] leading-[24px] font-normal lg:font-bold mb-4 opacity-80">
+        <p className="text-white text-[16px] leading-[24px] font-normal lg:font-bold mb-4 opacity-80 tracking-widest">
           CURRENT PARTNERS
         </p>
         <div className="flex items-end justify-between lg:mb-14 mb-10">

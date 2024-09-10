@@ -6,12 +6,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/navigation";
+
+import { Autoplay, Navigation } from "swiper/modules";
+
+import { Icons } from "../icons";
 
 const ElevateExperience = ({ elevateExperienceData }) => {
+  const navigationPrevRef = React.useRef(null);
+  const navigationNextRef = React.useRef(null);
   return (
     <section className="lg:px-16 lg:py-[120px] py-[70px] relative  bg-[#1A1A1A]">
       <div className="px-4 lg:px-0 container mx-auto">
-        <p className="text-white text-[16px] leading-[24px] font-normal lg:font-bold mb-4 uppercase opacity-80">
+        <p className="text-white text-[16px] leading-[24px] font-normal lg:font-bold mb-4 uppercase opacity-80 tracking-widest">
           PERKS
         </p>
         <div className="flex flex-wrap items-end justify-between mb-14">
@@ -79,6 +86,19 @@ const ElevateExperience = ({ elevateExperienceData }) => {
           <Swiper
             spaceBetween={20}
             slidesPerView={1.2}
+            navigation={{ nextEl: ".arrow-right", prevEl: ".arrow-left" }}
+          modules={[Autoplay, Navigation]}
+          autoplay={{
+            delay: 25500,
+            disableOnInteraction: false,
+          }}
+          onSwiper={(swiper) => {
+            swiper.params.navigation.prevEl = navigationPrevRef.current;
+            swiper.params.navigation.nextEl = navigationNextRef.current;
+            swiper.navigation.destroy();
+            swiper.navigation.init();
+            swiper.navigation.update();
+          }}
           >
             {elevateExperienceData?.map((items) => (
               <SwiperSlide key={items?.id}>
@@ -123,6 +143,15 @@ const ElevateExperience = ({ elevateExperienceData }) => {
               </SwiperSlide>
             ))}
           </Swiper>
+
+          <div className="slider-controller testimonial-control">
+        <button ref={navigationPrevRef} className="btn btn-arrow btn-back">
+          <Icons.ArrowLeft size={20} className="asset-white" />
+        </button>
+        <button ref={navigationNextRef} className="btn btn-arrow btn-move">
+          <Icons.ArrowRight size={20} />
+        </button>
+      </div>
         </div>
       </div>
     </section>
